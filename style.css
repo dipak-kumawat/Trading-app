@@ -1,0 +1,23 @@
+:root{
+    --white:#fff;
+    -black:#171717;
+    --bg-color:#1c1c1e;
+    --light-white:#999;
+    --box-shadow: 0 .5rem 1rem #000;
+    --border: .1rem solid rgba(255, 255, 255, .1);
+    --gradient:linear-gradient(65deg, deeppink, coral);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none; border: none;
+    
+}
+
+*::selection{
+    
+}
