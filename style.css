@@ -1,29 +1,31 @@
-:root{
-    --white:#fff;
-    --black:#171717;
-    --bg-color:#1c1c1e;
-    --light-white:#999;
+:root {
+    --white: #fff;
+    --black: #171717;
+    --bg-color: #1c1c1e;
+    --light-white: #999;
     --box-shadow: 0 .5rem 1rem #000;
     --border: .1rem solid rgba(255, 255, 255, .1);
-    --gradient:linear-gradient(65deg, deeppink, coral);
+    --gradient: linear-gradient(65deg, deeppink, coral);
 }
 
-*{
+* {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     text-transform: capitalize;
-    outline: none; border: none;
-    
+    outline: none;
+    border: none;
+
 }
 
-*::selection{
+*::selection {
     background: var(--white);
     color: var(--black);
 }
 
-html{
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 9rem;
@@ -31,39 +33,131 @@ html{
 }
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 1rem;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: var(--white);
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background-color: transparent;
 }
-body{
+
+body {
     background: var(--black);
     padding-bottom: 8rem;
 }
-section{
+
+section {
     padding: 3rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
-.header{
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    background: var(--gradient);
+    color: var(--white);
+    border-radius: 5rem;
+    transition: .3s linear;
+}
+.btn:hover{
+    background: var(--white);
+    color: var(--black);
+}
+
+.header {
     position: sticky;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--bg-color);
     border-bottom: var(--border);
     box-shadow: var(--box-shadow);
     z-index: 1000;
 }
-.header .flex   {
+
+.header .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
 }
+
 .header .flex .logo {
     font-size: 2 rem;
     color: var(--white);
 }
+
+.header .flex .logo i {
+    margin-right: .5rem;
+    color: coral;
+}
+
+.header .flex .btn{
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* media queries */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:760px){
+
+    body{
+        padding-bottom: 7rem;
+    }
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+
