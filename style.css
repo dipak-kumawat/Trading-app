@@ -218,6 +218,41 @@ section {
     color: var(--light-white);
 }
 
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit  , 35rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.services .box-container .box{
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background-color: var(--bg-color);
+}
+.services .box-container .box i{
+    font-size: 3.5rem;
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+.services .box-container .box h3{
+    font-size: 2rem;
+    margin: .5rem 0;
+    color: var(--white);
+}
+
+.services .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.4rem;
+    color: var(--light-white);
+    padding:1rem 0;
+}
+
+
 
 
 
