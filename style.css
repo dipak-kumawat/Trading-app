@@ -189,9 +189,10 @@ section {
 }
 
 .home .flex .image{
+    z-index: -5;
     flex: 1 1 30rem;
     position:  relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .home .flex .image img{
@@ -251,6 +252,46 @@ section {
     color: var(--light-white);
     padding:1rem 0;
 }
+
+.about {
+    background: var(--bg-color);
+}
+
+.about .flex{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap-reverse;
+}
+
+.about .flex .content{
+    flex: 1 1 40rem;
+}
+
+.about .flex .image{
+    flex: 1 1 40rem;
+}
+.about .flex .image img{
+    width: 100%;
+    height: 50rem;
+    object-fit: contain;
+}
+
+.about .flex .content h3{
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+
+.about .flex .content p{
+    font-size: 1.6rem;
+    color: var(--light-white);
+    padding: 1rem 0;
+}
+
+
+
+
 
 
 
