@@ -341,7 +341,7 @@ section {
 
 .reviews .flex .slide-container .slide{
     background: var(--bg-color);
-    padding: 2.5rem;
+    padding: 2.5rem; 
     display: none;
     animation: slide .2s linear;
     transform-style: preserve-3d;
