@@ -130,6 +130,7 @@ section {
     padding: 1rem 2rem;
     border-radius: .5rem;
     transition: .2s linear;
+    color: var(--white);
 }
 
 .navbar .nav a:hover{
@@ -290,12 +291,124 @@ section {
 }
 
 
+.reviews .flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 
+.reviews .flex .content{
+    flex:  1 1 40rem;
+}
+.reviews .flex .content h3{
+    font-size: 3rem ;
+    color: var(--white);
+    margin-bottom: .5rem;
+}
 
+.reviews .flex .content p{
+    line-height: 1.8;
+    font-size: 1.6rem;
+    color: var(--light-white);
+    padding: 1rem 0;
+}
 
+.reviews .flex .content .controls{
+    margin-top: .5rem;
+    display: flex;
+    gap: 1rem;
+}
 
+.reviews .flex .content .controls div{
+    height: 5rem;
+    line-height: 4.9rem;
+    font-size: 2.5rem;
+    color: var(--white);
+    background: var(--bg-color);
+    text-align: center;
+    width: 5rem;
+}
 
+.reviews .flex .content .controls div:hover{
+    background: var(--gradient);
+}
 
+.reviews .flex .slide-container{
+    flex: 1 1 40rem;
+    perspective: 1000px;
+}
+
+.reviews .flex .slide-container .slide{
+    background: var(--bg-color);
+    padding: 2.5rem;
+    display: none;
+    animation: slide .2s linear;
+    transform-style: preserve-3d;
+}
+
+@keyframes slide {
+    0%{
+        transform: rotateX(180deg);
+    }
+}
+
+.reviews .flex .slide-container .slide > *{
+    animation: slideContent .2s linear .2s backwards;
+}
+
+@keyframes slideContent {
+    0%{
+        opacity: 0;
+        transform: scale(.5);
+    }
+}
+
+.reviews .flex .slide-container .slide.active{
+    display: block;
+}
+
+.reviews .flex .slide-container .slide .text{
+    font-size: 1.6rem;
+    color: var(--light-white);
+    line-height: 1.8;
+}
+.reviews .flex .slide-container .slide .user{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: var(--border);
+}
+
+.reviews .flex .slide-container .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.reviews .flex .slide-container .slide .user h3{
+    font-size: 2rem;
+    color: var(--white);
+}
+.reviews .flex .slide-container .slide .user .stars{
+    margin-top: .5rem;
+}
+
+.reviews .flex .slide-container .slide .user .stars i{
+    color: coral;
+    font-size: 1.5rem;
+}
+
+.reviews .flex .slide-container .slide .user .fa-quote-right{
+    font-size: 4rem;
+    color: transparent;
+    background: var(--gradient);
+    background-clip: text;
+    margin-left: auto;
+}
 
 
 
