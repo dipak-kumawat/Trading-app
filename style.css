@@ -410,12 +410,72 @@ section {
     margin-left: auto;
 }
 
+.download .flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.download .flex .images{
+    flex: 1 1 40rem;
+}
+.download .flex .images img{
+    width: 100%;
+    height: 50rem;
+    object-fit: contain;
+}
+.download .flex .content{
+    flex: 1 1 40rem;
+}
+.download .flex .content h3{
+
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.download .flex .content p{
+    line-break: 1.8;
+    font-size: 1.6rem;
+    color: var(--light-white);
+    padding: .5rem 0;
+}
 
 
+.download .flex .content .links{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
 
+.download .flex .content a{
+    padding:  1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+}
 
+.download .flex .content a i{
+    margin-right: .5rem;
+}
 
+.download .flex .content a:first-child{
+    background-color: var(--white);
+    color: var(--black);
+}
+.download .flex .content a:first-child:hover{
+    background: var(--gradient);
+}
+.download .flex .content a:last-child:hover{
+    background: var(--gradient);
+    border: transparent;
+}
 
+.download .flex .content a:last-child{
+    background-color: var(--bg-color);
+    color: var(--white);
+    border: var(--border);
+}
 
 
 
@@ -484,6 +544,14 @@ section {
     }
     .home .flex .content h3{
         font-size: 2.5rem;
+    }
+
+    .download .flex .content h3{
+        font-size: 2rem;
+    }
+    .download .flex .content a{
+        text-align: center;
+        width: 100%;
     }
 }
 
