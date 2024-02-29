@@ -477,6 +477,140 @@ section {
     border: var(--border);
 }
 
+.pricing .toggle-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.pricing .toggle-buttons .button{
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    border-radius: .5rem;
+    background: var(--bg-color);
+    text-align: center;
+    cursor: pointer;
+}
+.pricing .toggle-buttons .button.active,
+.pricing .toggle-buttons .button:hover{
+    background: var(--gradient);
+}
+
+.pricing .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pricing .box-container .box{
+    padding: 2rem 2.5rem;
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+}
+
+.pricing .box-container .box h3{
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+.pricing .box-container .box .price {
+    /* margin:  1rem 0; */
+    margin-bottom: 1rem;
+    animation: price .2s linear;
+    transform-origin: top;
+}
+@keyframes price{
+    0%{
+        opacity: 5;
+        transform: scaleY(.5);
+    }
+}
+
+.pricing .box-container .box .price span:first-child{
+    color: coral;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.pricing .box-container .box .price span:last-child{
+    font-size: 1.5rem;
+    color: var(--light-white);
+}
+
+.pricing .box-container .box .price.year{
+    display: none;
+}
+
+
+.pricing .box-container .box .list p{
+    padding:  1rem 0;
+    font-size: 1.6rem;
+}
+
+.pricing .box-container .box .list{
+    margin-top: 1rem;
+    padding: .5rem 0;
+    border-top: var(--border);
+}
+.pricing .box-container .box .list p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+}
+
+
+.pricing .box-container .box .list p i{
+    margin-right: 1rem;
+}
+
+.pricing .box-container .box .list p .fa-circle-check{
+    color: limegreen;
+}
+
+.pricing .box-container .box .list p .fa-circle-xmark{
+    color: tomato;
+}
+
+.pricing .box-container .box .list p{
+    color: var(--light-white);
+}
+
+.pricing .box-container .box .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.pricing .box-container .box:nth-child(2){
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
