@@ -602,6 +602,7 @@ section {
 
 .newsletter .news h3{
     color: var(--white);
+    padding-top: 2rem;
     font-size: 3rem;
     text-transform: uppercase;
 }
@@ -623,6 +624,7 @@ section {
 }
 
 .newsletter .news form .input{
+    margin-bottom: 1.5rem;
     border-radius: 5rem;
     padding: 1.2rem 1.5rem;
     font-size: 1.8rem;
@@ -641,12 +643,52 @@ section {
 
 
 
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 27rem);
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.footer .box-container .box a{
+    font-size: 1.6rem;
+    color: var(--light-white);
+    display: block;
+    padding: 1rem 0;
+}
 
 
 
+.footer .box-container .box a i{
+    color: coral;
+    margin-right: .5rem;
 
+}
 
+.footer .box-container .box a:hover{
+    color: var(--white);
+    text-decoration: underline;
+}
 
+.footer .credit{
+    padding: 3rem 2rem;
+    font-size: 2rem;
+    border-top: var(--border);
+    text-align: center;
+    color: var(--light-white);
+}
+
+.footer .credit span{
+    color: coral;
+}
 
 
 
